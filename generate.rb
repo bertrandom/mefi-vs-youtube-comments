@@ -44,6 +44,11 @@ end
 mefi_comments = mefi_comments.shuffle
 youtube_comments = youtube_comments.shuffle
 
+if mefi_comments.length < 25 || youtube_comments.length < 25
+    puts "There was an issue fetching some comments."
+    exit
+end
+
 fight = Fight.new
 fight[:mefi_comments] = mefi_comments
 fight[:youtube_comments] = youtube_comments
