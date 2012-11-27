@@ -10,10 +10,10 @@
     <style>
       
       .container-fluid {
-      	padding-right: 		0px;
-		padding-left: 		0px;
+        padding-right:      0px;
+        padding-left:       0px;
       }
-
+      
       div.metafilter {
         background-color:   #006699;
         color:              white;
@@ -31,18 +31,18 @@
       }
 
       div.comments {
-        padding-top: 		15px;
+        padding-top:        15px;
       }
 
       ul {
-        margin: 			0;
-        padding: 			0;
+        margin:             0;
+        padding:            0;
       }
 
       li {
-        list-style-type: 	none;
-        margin: 			0px;
-        padding: 			20px;
+        list-style-type:    none;
+        margin:             0px;
+        padding:            20px;
       }
 
       footer p {
@@ -61,18 +61,18 @@
       </div>
       <div class="row-fluid">
         <div class="span6 metafilter comments">
-			<ul>
-				{{#mefi_comments}}
-				<li>{{{comment}}}</li>
-				{{/mefi_comments}}
-			</ul>
+            <ul>
+                {{#mefi_comments}}
+                <li>{{{comment}}}</li>
+                {{/mefi_comments}}
+            </ul>
         </div>
         <div class="span6 youtube comments">
-			<ul>
-				{{#youtube_comments}}
-				<li>{{{comment}}}</li>
-				{{/youtube_comments}}
-			</ul>
+            <ul>
+                {{#youtube_comments}}
+                <li>{{{comment}}}</li>
+                {{/youtube_comments}}
+            </ul>
         </div>
       </div>
       <footer class="footer">
