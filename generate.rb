@@ -48,6 +48,6 @@ fight = Fight.new
 fight[:mefi_comments] = mefi_comments
 fight[:youtube_comments] = youtube_comments
 
-fh = File.new("web/index.html", "w")
+fh = File.new(File.dirname(__FILE__) + "/web/index.html", "w")
 fh.puts fight.render
 fh.close
