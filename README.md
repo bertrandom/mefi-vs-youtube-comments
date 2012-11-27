@@ -6,9 +6,10 @@ I recently rewrote this in Ruby, the original which was written in PHP using the
 
 ## Installation
 
-Install the [feedzirra](https://github.com/pauldix/feedzirra) gem. 
+Install the [feedzirra](https://github.com/pauldix/feedzirra) and mustache gems. 
 
 	gem install feedzirra
+	gem install mustache
 	
 Run `generate.rb`. If all goes well, `web/index.html` should contain the latest comments. After you've confirmed that worked, add the contents of `crontab` to your web user's crontab, changing the absolute path to wherever you install this to. This will update the page once per day.
 	
