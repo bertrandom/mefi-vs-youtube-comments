@@ -1,1 +1,1 @@
-0 8 * * * /var/www/comments.thatsaspicymeatball.com/generate.rb >> /dev/null 2>&1
+0 8 * * * /var/www/comments.thatsaspicymeatball.com/generate.rb >> /var/www/comments.thatsaspicymeatball.com/logs/comments.log 2>&1

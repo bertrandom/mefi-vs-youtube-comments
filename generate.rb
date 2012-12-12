@@ -5,6 +5,7 @@ require 'feedzirra'
 require 'mustache'
 
 class Fight < Mustache
+    self.template_path = File.dirname(__FILE__)
     def mefi_comments
     end
     def youtube_comments
