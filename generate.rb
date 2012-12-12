@@ -14,6 +14,11 @@ end
 
 mefi_comments = []
 
+#
+# http://www.metafilter.com/122235/HI-KICK-CLAP-HI-HI-CLAP-HI-KICK-CLAP-I-AM-YOUR-MA-GIC-WAND------- contained invalid &#55357; entities for an XML document, breaking the parser.
+# This manually strips those out before feeding it to the parser, otherwise we could have just used fetch_and_parse
+#
+
 mefi_xml = Feedzirra::Feed.fetch_raw('http://feeds2.feedburner.com/Metafilter')
 mefi_xml = mefi_xml.gsub(/&#55357;/,'')
 rss = Feedzirra::Feed.parse(mefi_xml)
